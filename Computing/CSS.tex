@@ -1,0 +1,65 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\newgeometry{margin=1cm}
+%\usepackage{}
+%this place is called preamble
+\begin {document}
+\title{Intro to CSS}
+%\author{}
+%\date {\today}
+%\maketitle
+\date {\today}
+CSS has a selector and declarations
+\section{Syntax}
+\verb! h1{color:blue' font-size :12px}!
+where h1 is the selector (the HTML element you want to operate on)
+\\color, font-size is the property
+\\blue,12px is the value
+\section{Types of Selectors}
+\subsection{id(\#)}
+specify a style for a \it single,unique HTML element\rm that uses the attribute id="something" in HTML
+\begin {verbatim}
+#para1{
+text-align:center;
+color:red;
+}
+
+In HTML
+<p id="para1">Hello World!</p>
+\end{verbatim}
+\subsection{class(.)}
+specify a style for multiple elements
+\begin{verbatim}
+.heading{
+font-family: "ultraHUGEmegaFONT"
+}
+In HTML,
+<h1 class="heading">Tis is the Heading </h1>
+
+Specifying HTML elements that should only be affected by a class
+
+p.heading{
+font-family: "ultraHUGEmegaFONT"
+}
+In HTML, if I do the same thing
+<h1 class="heading">Tis Nothing will happen ...Tis will not be the Heading </h1>
+ Heading will only be applied to instances of p
+<p class="heading"> Heading </p>
+
+\end{verbatim}
+\section{Inserting CSS Exterally}\footnote{You can also insert CSS Inline ,mutiple style sheet, internal style sheet }
+\\Each page must link to style sheet using <link> tag.(inside the <head>)
+\\Must be saved as .css extension
+In the HTML file,
+\begin{verbatim}
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+\end{verbatim}
+This one is the change that is actually applied to my browser    
+\begin{verbatim}
+background: linear-gradient(to bottom,  
+    #35fcad 0%,  #73e3ff 100%); /* W3C, IE10+ */
+\end{verbatim}
+
+\end{document}

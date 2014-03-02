@@ -1,0 +1,229 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\newgeometry{margin=1.5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[normalem]{ulem}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\let\oldhat\hat
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+\usepackage{wasysym}     
+
+
+\begin {document}
+\title {Ch1 :Electrostatics: charges and fields}
+\date {}
+\maketitle
+\vspace{-80pt}
+\section {Quality of Charges}
+\begin{itemize}
+\item Classical (i.e. nonquantum) EM treats electric charges ,current, ...etc quantities involved as if they can all be measured independently with unlimited precision. (ignoring the effect of the quantum law and $\hbar$.)
+\item Calculus$\rightarrow$Classical Mechanics $\rightarrow$ Special Relativity
+\item Multivariable Calculus $\rightarrow$ Classical E\&M $\rightarrow$ Quantum Mech
+\item Nevertheless, much of Classical E\&M and Mechanics still holds after discovery of quantum mech.
+\item $\because$ Classical E\&M are based on experiments  works on everyday things (capacitors, coils, radio, light waves but not for inside a molecule)
+
+\item Charge can be considered as a symmetrical property $\because$ antiparticle
+\item  Not sure if this is talking about Parity/ Time Symmetry (CPT):
+``the relation of a sequence of events, a , then b , then c, to the temporally reverse sequence then b , then a."
+\item Even though neutron (charge =0) , with antineutron (charge also 0) there are some things fundamentally different about them.They are different in that the up and down quark themselves have fractional charges. \footnote{http://www.fnal.gov/pub/inquiring/questions/antineutron.html}
+\end{itemize}
+\begin {align}
+n^{0} = up+down+down \\
+\bar n= \overline{up} + \overline{down}+ \overline{down}
+\end {align}
+Two Changes to E\&M
+\begin{itemize}
+\item Special relativity grew out of Maxwells equation, requires no change to classical E\&M
+\item Quantum shows that E\&M only accurate to $\approx 10^{-12} m$ \footnote{size of atom is $10^{12}$, so 100 times smaller than atom. So we can still use classical E\&M to describe attraction and repulsion of particle in atom. Quantum mechanics tells us \it how \rm the particles will move, under the influence of these forces. Then QED for even smaller distances.}
+\end{itemize}
+Atomic nucleus (+ part) $\approx 10^{-14} m$, electron spread out to $\approx 10^{-10} m$  $\rightarrow$ fundamental assymmetry in matter
+Positive and negative only a matter of definition. Nothing physically about them that characterize them that way.
+\section{Quantity of Charges}
+\subsection{Conservation of Charages}
+\it Isolated system \rm : A box where no \it matter\rm can pass in or out
+\\Light $\gamma$ can pass in or out, because photon is chargeless. It can cause Pair production
+\begin{align}
+\gamma \rightarrow particle + \overline{particle} \\
+ex) \quad  \gamma \rightarrow e^+ +e^-
+\end{align}
+Total electric charge of an isolated system is \it relativistically invariant\rm \footnote{ If observer A and B in different frames measuring charges will obtain the same measurement on the number of charges}
+
+\subsubsection{Quantization of Charges}
+All electric charges ever measured can be expressed as \it e\rm. The fact that proton and electron has $\approx$ same charge is shown by J.G. King experiment:
+\begin{itemize}
+\item You have lots and lots of hydrogen molecules ($H_2=2 p^+ +2 e^-$).
+\item If charge inequality between $p^+$ and 2 $e^-$, by only a very very little amount 
+\item then its effect is magnified when you have lots and lots of hydrogen molecules
+\item From experiment, there is no observed charge in a electrically insulated tank with large amounts of compressed hydrogen molecules. 
+\end {itemize}
+
+
+This equality may be connected to assymetrical productions such as :
+$$ p^+ \rightarrow e^+ + neutral \quad particle$$
+Also $\because$ QCD (strong interaction theory) says liberation of single quark from a hadron is $\approx $ impossible.\footnote {in this text, for the sake of examples we are allowed to have fractional \it e \rm, it is important to note that this doesn't really exist in nature}
+\section {Coulumb's law}
+\begin{align}F_2= \frac{kq_1q_2}{\vec {r_{21}}^2}\bf \hat{r_{21}}\end{align}
+where $F_2$: force on $ q_2$ 
+and $\hat{r_{21}}$ is a unit vector from $q_1$ to $q_2$
+\begin{itemize}
+\item experimentally tested in range $10^{-16}$ to $10^8$ m (Jupiter's magnetic field)
+\item Principle of superposition: forces depend only on the two charges that interact, the presence of other charges does not affect the forces. The forces (configuration of sytem) is determined by the vector sum of all the forces present.
+
+\end{itemize}
+\subsection{ Central Force generalization}
+ $$F(\vec r)=\frac{kq_1q_2}{\vec {r} ^2} \bf \hat{r}$$
+ where $\vec {r}$ points from origin to test charge. \footnote{Recall that in our reduced mass,(and when m$<<$M) we treat $\mu$ as m, both mathematically and intuitively (since the motion of m is what we car
+ e about here) }
+\\Don't put in the charge's sign.
+\\Determine if : 
+ attractive ( F$<$ 0 )or repulsive(F $>$0)
+ \subsection{Gaussian system}
+ \footnote{see Appendix D notes}
+
+ \begin{itemize}
+ \item a type of cgs (cm-grams-second) system
+ \item Force in dynes, charge in electrostatic unit (esu) , $\vec r_{12}$ in cm
+ \item Define Couloumb's constant k =1 (dimensionless)
+ \end{itemize}
+
+ \section{Energy of a System of Charges}
+ \begin{itemize}
+ 
+ \item $\because$ Couloumb law $\alpha \quad \vec{r_{12}} \rightarrow$ Central Forces
+ 
+ \item And $\because$ Central Forces are ,by definition, conservative
+ \item Conservative Force $\xrightarrow{\nabla}$ Conservative Force Field $\xrightarrow{line \quad integral} \therefore$ Work is path-independent
+ \item $\therefore$ The \it order\rm of the way a system of charges is configured doesn't matter. Only final and initial configuration matters.
+ \item  The total work done by the system is denoted by U.
+ \item Simmilar to its mechanical equivalence, electrical potential energy (U) is a relative concept. 
+  \footnote{define U=0 at r$\rightarrow \infty$ }
+ \item Work is defined as work done \it on \rm the system 
+ \item This can also be seen somewhat as an extension to the Superposition principle. \\$\because$ force is additive, $\therefore \int \Sigma F_i \dot dr= \Sigma W_i$
+ \item U is a property of the whole configuration (system) not of a single charge. \footnote{well...unless the whole system is only composed of one single, sad , lonely charge} You can not somehow use fractional charges and assign it as U of a charge. There is U contributed by the interaction of two charges though:
+ $$U_i = \frac {kq_1q_2}{r}$$
+ \item $$U=\frac{1}{2} \sum^{N}_{k=2} \sum_{k \neq j} \frac{1}{4 \pi \sigma_0} \frac{q_i q_j}{r_{jk}}$$ Since taking the sigma twice $\rightarrow$ summing over every pair twice. So we use the $\frac{1}{2} $ factor to correct that. Also k$\neq$ j, $\because$ can not interact with itself
+  \end{itemize}
+\section{Electrical Energy in Crystal Lattice}
+\subsection{Facts and Assumptions:}
+\begin{enumerate}
+\item Every ion is treated as spherically symmetric $\approx$ point charge
+\item Alternating, repeating  + - ions in lattice structure$\rightarrow$ symmetric$\therefore$ can choose any ion as center 
+\item $\because $alternating, repeating  + - ions $\approx$ neutral $\therefore$ we don't have to do a lot of work to compact it into that structure
+\end{enumerate}
+\subsection{Computation}\begin{align*}
+\text{Using premise 1,}U=\frac{1}{2} \sum^{N}_{k=2} \sum_{k \neq j} \frac{1}{4 \pi \sigma_0} \frac{q_i q_j}{r_{jk}}  \quad \quad \text{N : total \# of ions}
+U=\frac{1}{2} N \sum^{N}_{k=2}  \frac{1}{4 \pi \sigma_0} \frac{q_1 q_k}{r_{1k}}
+\\ \text{Using premise 2, we let $Na^+$ be center.}
+\\U=\frac{1}{2} \sum^{N}_{k=2} \sum_{k \neq j} \frac{1}{4 \pi \sigma_0} (U_{neighbouring ions} + U_{edging ions}+ U_{ions at vertices}+....\text{more and more outer layers}) 
+\end{align*}
+\subsection{Interpretation}
+\begin{itemize}
+\item This series does not converge absolutely, but if we use premise three and think of the shells as canceling out their charges, we can sum up very small values and intense computation yields a numerical summation.
+\item The numerical value is insignificant to our discussion, all we have to care about is that the U is negative $\therefore$ work have to be done for crystal $\rightarrow$ ions $\therefore$ cohesion
+\item To prevent lattice from collapsing, introduce quantum mech $\rightarrow$ supplies balancing outward force.
+\end{itemize}
+\section{Electric field}
+Force on some charge in field $\vec{E}$:
+$$\vec{F}=q \vec {E}$$
+
+\subsection{Facts and Assumptions}
+Assume that source (point charge that gives rise to electric field) are fixed. $\because$ if it is not fixed, then the presence of a test charge can influence its location $\rightarrow$ causing the $\vec E $ to change 
+
+\subsection{Point Charge}
+Electric field\footnote{$\vec{E(x,y,z)}$ is a vector function} of a charge distribution/ configuration of \it sources\rm ($ q_1,q_2,...,q_N$) in the absence of a test charge ,$q_0$, at point (x,y,z):
+$$ \vec {E} (x,y,z)= \frac {1} {4 \pi \epsilon_0} \sum^{N}_{j=1} \frac{q_j \hat {r_{0j}}}{r_{0j}^2}$$
+\subsection{Visualization}
+\begin {enumerate}
+\item Direction field : small unit vectors drawn as arrows indicating direction of the field
+\item Field Lines: 
+\begin {itemize}
+\item Think of the directionality of a field as where the motion of a positive particle will go if you place a positive test charge at that point.\footnote{electric field points \it away \rm from positive source.}
+\item cuurves whose tangent lies in the direction of field at that point
+\item closeness between field lines indicate magnitude of the field near  the region
+\item Electric field is 3D but our drawings confine us to 2D 
+\end{itemize}
+\end {enumerate}
+\section{Charge Distribution}
+Assumption:
+\begin{enumerate}
+\item we are trying to find $\vec E$ of large scale system, such that dV$\rightarrow$0 relative to the size of system
+\item $\rho$ (charge density) is a relatively macroscopic phenomenom. In quantum realm, there is large fluctuation of $\rho$ from point to point.
+\item dV is a finite volume element, not a infinesimal point charge $\therefore$ avoid singularity issue at r=0 \footnote{In the hemisphere case, $\because r^2 $ cancels out. $\therefore$As long as $\rho$ is finite, then $\vec E $ is finite.}
+\end{enumerate}
+Given our assumptions, the source of electric field is a volume element dV of a continuous charge distribution. We simply replace the $\Sigma$ we have for point charge to $\int$.
+$$\vec {E} (x,y,z)= \frac {1} {4 \pi \epsilon_0}\int 
+\frac{\rho(x\prime,y\prime,z\prime) dx\prime dy\prime dz\prime \hat {r}}{r^2}$$
+Electric field at  (x,y,z) produced by charges at point $(x\prime,y\prime,z\prime)$, let volume integral vary all over space that contain charge. 
+
+\subsection{An example of Formal Symmetry Arguement}
+Charge evenly distributed on a hemisphere.
+Proof by contradiction:
+To show that the electric field is vertical,  we can prove by assuming that it is not vertical
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+hemisphere looks exactly the same before and after the rotation. 
+However, there is two ways that $\vec E$ is oriented. This is a contradiction.
+$\therefore$ by showing that it is not ``not vertical", we can conclude that the electric field is indeed vertical.
+\section{Flux}
+Given any surface, divide surface into patches such that:
+\begin{enumerate}
+\item dA is $\approx$ flat (like  plane, and $\because$ planes are described by one $\hat n \therefore$ each dA contains a $\hat n $ )
+\item field is $\approx$ constant within the range of the patch.
+\end{enumerate}
+$\therefore$ if we sum up all the patches
+$$\Phi =\sum _{\text{ all j}} \vec {E}_j \cdot \vec A_j=\int_{\text{entire surface}} \vec E \cdot \vec A$$
+\section{Gauss Law}
+Flux of a sphere:
+$$\vec E\cdot \vec A=E\cdot A\hat n=\frac {q}{4\pi \epsilon_0 r^2}\cdot 4 \pi r^2=\frac {q}{\epsilon_0}$$
+Now we try to come up with a generalization of flux for any surface, given what we know about sphereical behaviour
+ $\because$We can enclose a sphere of radus r inside our surface, with a surface element a. \\Take any one patch A from the outer surface, A is larger than a by $(r/R)^2$ and by the cos $\theta$factor \footnote{The unit vector of the patch is not necessarily same as the sphere that encloses it.} 
+ $$\Phi_{\text{through} a_j}=\vec E \cdot \vec a_j=E \cdot A cos (90^o)= E A$$
+ \begin{align*}
+  \Phi_{\text{through} A_j}&=\vec E \cdot \vec A_j
+ \\&=E \cdot A cos\theta
+ \\&=[E(r)(\frac{r}{R})^2][a(\frac{R}{r})^2\frac {1}{cos \theta}]cos \theta= E(r)a
+\end{align*}
+\begin{align*}
+\therefore \Phi_{\text{through $a_j$ inner patch}}=\Phi_{\text{through $A_j$outer patch}}
+\\\text{And} \because \text{we know that}  \Phi_{\text{through inner patch}}= \Phi_{\text{sphere}}=\frac {q}{\epsilon_0}
+\\ \therefore \Phi_{\text{through any surface}}=\frac {q}{\epsilon_0}
+\end{align*}
+Collary: If the charge lies outside the surface , then$\Phi$ through closed surface =0.
+\\Using the Principle of superposition for electric field \footnote{ any electric field is the sum of the fields of its individual sources
+$\Phi= \int_S \vec E \cdot d\vec a=\int_S (\vec E_1+ \vec E_2+\vec E_3+....\vec E_N)\cdot d\vec a $}, we can now sum up the contribution of electric field of each small d$\vec a$.We get Gauss law \footnote{Note that since our proof is simply based on geometric nature of an inverse square interaction, and the law of superposition, Gauss law is applicable to any inverse square field in physics (most notably in gravitation)} (i.e. the flux of $\vec E$ over any \textbf{closed}  surface )
+
+$$\int E \cdot d\vec a = \frac{1}{\epsilon_0}\sum_i q_i = \frac{1}{\epsilon_0} \int \rho d\vec V$$
+\subsection{Spherical Charge Distribution}\footnote{defined as distribution where $\rho$ depend only on r}
+\begin{itemize}
+\item $\vec E $ at any point must be radial $\because$ unique direction
+\item let R be the radius of the circle and r be the distance from center to the point where you measure $\vec E $
+\\For a Spherical Shell,
+\begin{displaymath}
+   \vec E(r) = \left\{
+     \begin{array}{lr}
+       \frac{kq_{enclosed}}{\vec {r} ^2} & \text{Act as if point charge in center \footnote{test}}: r \geq R\\
+       0 & \because Q_\text{enclosed}\footnote{Try to figure out the Geometric arguement of this} =0: r < R
+     \end{array}
+   \right.
+\end{displaymath} 
+
+\end{itemize}
+
+\section{My Questions}
+\begin{itemize}
+  \item   Electric flux relation between d$\vec S$ and d$\vec A $ 
+  \item  How does boundary condition affect ends of ``tin can", how does the symmetry arg play a role here? (Purcell pg 29)
+  \item What happens when you have a spherical shell but its thickness(t) is not negligible, we know that at r$>$R $\rightarrow$ act like point charge, and r$<R$ $\rightarrow \vec E$=0. What is the $\vec E$ when $R< r <R+t$ (when r is within the shell), then does the problem turn into $Q_enclosed$ by the imaginary concentric shell within r?
+\end{itemize}
+\end {document}
+Definition
+facts and assumptions
+Derivation, application 
+

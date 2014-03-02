@@ -1,0 +1,62 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\newgeometry{margin=1.5cm}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[normalem]{ulem}
+\renewcommand{\vec}[1]{\mathbf{#1}}
+\let\oldhat\hat
+\renewcommand{\hat}[1]{\oldhat{\mathbf{#1}}}
+\begin {document}
+\title {Differences between SI and Gaussian units}
+\date {\today}
+\maketitle
+\section {SI units}
+\begin{itemize}
+\item Coulumb is a derived unit
+\item base unit involving charge is ampere (for current )
+
+\item Force/ meter on one wire when two parallel wires separated by 1 m carrying 1A current and force exerted =2 $ \cdot 10^{-7}$
+\item Coulumb = 1 A$\cdot$ s
+\item By using Coulumb's law, let $q_1=q_2=1C$ and r=1m, so our F=  9$\cdot 10^{9} $N \footnote{9$\cdot 10^{9}=c^2/ 10 ^7$} 
+\item $\therefore$ we define k=9$\cdot 10^{9} N m^2/C^2$=1/$4 \pi \epsilon_0$ \footnote{$\epsilon_0 =8.85 \cdot 10^{-12} A^2 s^4 kg^{-1} m^{-3}$}
+\item $\because$ we defined current via the Lorentz force, the Coulumb force between two charges ends up being a number we just have to accept. We can only have nice numbers in one case or another, not both.
+\item $\therefore$ the SI system gives preference to Lorentz force  $\because$ in historical experiments, galvanometer measures ampere  much easier to measure than F exerted by point charges .
+\end{itemize}
+\section{Gaussian units}
+\begin{itemize}
+
+\item Gaussian unit of charge =esu $\rightarrow$ very different from SI Coulumb
+\item esu is defined via the Coulumb force
+\item here, we define k=1 (dimensionless)
+\item $\therefore$ the Lorentz force involves a factor of $ c^2$
+\end{itemize}
+\section{Main differences between the systems}
+\begin{itemize}
+\item units of $k_{Gaussian} $ is dimensionless
+\item this allows us to solve for esu in terms of base units
+$$F= k\cdot \frac{qq}{r^2} \quad \quad [dynes]=[dimensionless]\cdot [\frac{esu ^2}{cm^2}]$$
+$$ \therefore esu = \sqrt {dynes \cdot cm^2 } =\sqrt{g\cdot cm^3 \cdot s^{-2}} \quad \quad \quad \quad \footnote{dynes=$g \cdot cm / s^2$}$$
+\item $\therefore$ esu is not a fundamanetal unit ,whereas A is a fundamental unit in SI.
+\end{itemize}
+Three main difference between SI and Gaussian (least important $\rightarrow$ most important)
+\begin{enumerate}
+\item cm-gram-second only differ with SI with powers of 10
+\item Gaussian based on Coulumb's law
+SI based on Lorentz forces
+\item $k_{gaussian}$ dimensionless ;$k_{SI}$ is dimensionful
+\\$\therefore$ can express esu in terms of other gaussian base units.
+\end{enumerate}
+
+\section{Three units versus four}
+\begin{itemize}
+\item $\because$ there is less base units in Gaussian, doing dimensional analysis in gaussian gives us less insight into stuff.
+\end{itemize}
+
+
+\end {document}
+
+
+
+

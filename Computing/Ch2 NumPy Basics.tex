@@ -1,0 +1,59 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newgeometry{margin=1cm}
+\begin {document}
+
+\title{Ch2 : Beginning with NumPy Fundamentals} 
+\date {\today}
+\maketitle
+\footnote{NumPy 1.5 Beginner Guide by Ivan Idris}
+\section{ndarray}
+\begin{itemize}
+\item multi-dimensional array object called ndarray
+\item  consists of 1) The actual data
+2) Some metadata describing the data
+\item many operations change only the metadata 
+\item arange is 1D array 
+\item $\because$ NumPy array is homogeneous (items must be same type)
+\item $\therefore$ easy to determine storage size for array 
+\item indexing like Python 
+\item ndarry has two attributes:
+\item dtype: NumPy datatypes represented by special objects \footnote{ myobject.dtype(): function that returns the datatype of the objects}
+\item shape \footnote{myobject.shape(): returns the shape of the object}
+The shape attribute of the array is a tuple,  contains the length in 
+each dimension.
+\item the \verb! array! function takes in any object that is array-like (e.g. Python lists) then create an array from the object.\footnote{NumPy function tends to have many various optional args with predefined defaults.}
+
+
+\end{itemize}
+\section {Data Types}
+\begin{itemize}
+\item NumPy support much more data types than Python library $\therefore$ program can be optimized (least memory) to specific numerical usage, also $\because$ complex numbers
+\item There is conversion methods from each type to another \footnote{Exception: TypeError if try to convert ComplexNumber  into an integer, or a float }
+\\ ex) \verb! In: float64(42)!
+\\ \verb !Out: 42.0!
+\item Many functions have a data type argument, which is often optional. \footnote{ex) for array $\because$ only one data type $\therefore$ autodetect type}
+\item  Character codes are included for backward compatibility with Numeric. 
+\item Their use is not recommended, should instead use dtype objects.
+\item dtype constructor: create data types, can take character code or just its general name
+\item A listing of all full data type names can be found in sctypeDict.keys()
+\item dtype attribute:
+\begin{itemize}
+\item d.char : return the character code of dtype object
+\item  d.type: attribute corresponds to the type of object of the array elements
+\item d.str : string representation of the data type. \\ \verb!`<endianness-optional> <character-code><number-of-bytes-each-array-item-requires>'! Endianness = the way bytes are ordered within a 32 or 64-bit word. In big-endian order, the most significant byte is stored first. In little-endian order, the least significant byte is stored first.
+
+\end{itemize}
+\item Example: Creating a record data type \footnote{record data type is a heterogeneous data type like a row in a spreadsheet.}
+\end{itemize}
+\section{Slicing and Indexing ndarray}
+
+
+
+
+
+
+\end{document}

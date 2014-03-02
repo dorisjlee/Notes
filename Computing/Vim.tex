@@ -1,0 +1,47 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{soul}
+\newgeometry{margin=1cm}
+\begin {document}
+
+\today
+\section{List of Useful Commands}
+\begin {itemize}
+\item Exit out of terminal 
+:q
+:q!
+or ZZ to save 
+or :w to save without exiting vim
+\item Insert Mode $\rightarrow$ Edit Mode : Esc key
+\item Edit Mode $\rightarrow$ Insert Mode :
+i
+\item Undo : u
+\item Ctrl-R : redo
+\item delete the next  lines
+:+,+2d
+This is a range 
+from + to +2 from current line ,delete
+\item dG delete all to end of file
+\item Ctrl V select lines, then enter >
+\end {itemize}
+Weird issue that kept telling me that swap file exist. 
+in the end, I just did E (edit) then did:
+:call delete (".vector.py.swp")
+can not do rm in shell since it seems to be hidden somehow.
+
+\section{vimrc}
+\begin{itemize}
+\item vim \_vimrc
+\item vimrc is a file where all your customization to vim is made
+\item Change to use jj to leave insert mode 
+\\Original: <ESC> 
+\\ \verb !noremap jj <ESC>!
+\item Changing leader key
+\\Original: \
+\\ let mapleader= ", "
+\\for executing shortcuts
+\end{itemize}
+\end{document}

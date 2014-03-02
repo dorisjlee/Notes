@@ -1,0 +1,89 @@
+\documentclass[12 pt , twoside, letterpaper] {article}
+\usepackage{geometry}
+\usepackage{cancel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\newgeometry{margin=1cm}
+\begin {document}
+
+\title{Ch1 : NumPy QuickStart} 
+\date {\today}
+\maketitle
+\footnote{NumPy 1.5 Beginner Guide by Ivan Idris}
+sudo apt-get install python-numpy
+\section{Vector Example}\footnote {see vector.py}
+ more efficient than Python lists, when it comes to numerical operations.
+less explicit loops than equivalent Python code. 
+The arange function (imported from NumPy)creates a NumPy array  with integers 0 to n.
+By using datetime to create a time recorder, we see that NumPy is faster thaan Python lists. Note that the string representation is different. NumPy array delimited by space (think of it as a matrix)
+\section{MatPlotLib}
+sudo apt-get install python-matplotlib
+
+
+
+
+\section{IPython}
+\begin{itemize}
+\item Interactive shell created by scientists for doing experiments 
+\item IPython authors only request that you cite IPython in scientific work where IPython was used.
+\item Pylab switch imports all the Scipy, NumPy, and Matplotlib packages
+\item sudo apt-get install ipython-notebook
+\item Installing additional scientific computing packages \footnote{http://ipython.org/install.html}
+\\ sudo apt-get install python-matplotlib python-scipy \
+python-pandas python-sympy python-nose
+\item quit( ) or Ctrl + D quits the IPython shell
+\item Save current IPython shell by
+\verb! %logstart !
+\item IPython shell is like UNIX shell, can use ls...etc
+\item This runs \verb! %run -i vector.py 1000!
+\item ipdb is IPython Debugger 
+\item  -d  option for \verb!%run! starts an ipdb debugger with 'c' the script is started. 'n' steps through the code.
+\\ \verb! %run -d vector.py 1000!
+\item Enter c at the ipdb$>$ prompt to start your script.
+\item -p option:(profile) we can identify which parts of our program is taking most of the computing time. This prints out a list of all the methods and function called and then prints out the time it took to compute them.Z
+\item \verb!%hist ! command shows the command history
+\item we can use <tab> for autocomplete
+\item IPython don't need to call ``print" to display variable values
+\item Support: There is an IRC channel on irc.freenode.net. The channel is called \#scipy, but you can also ask NumPy questions since SciPy users also have knowledge of NumPy, as SciPy is based on NumPy. There are at least 50 members on the scipy channel at all times.
+\subsection{Notes on IPython Shell Documentation}
+\item ipython -h :shows command line options available
+\item help : standard Python help
+\item \%magic : more information on magic subsystem
+\item \%alias :system command aliases
+\item ?word or word?: brief info about an object
+\item ??word or word??: fill info about an object
+\item \%pdoc : show docstring 
+\item TAB: completion in local namespace
+\item TAB: show all available command
+\item Ctrl + p: match history items that match what you've type so far
+\item Simmilarly for Ctrl+n (next, down)
+\item Ctrl +r :search box
+\item \%hist : search history by index 
+\item exec In[3]: re-execute Input line 3
+\item Be careful not to overwrite global variables, dont name starting with \_ or multiple \_
+\item auto\_parenthesis and auto-quoting : but they don't seem much helpful
+\end{itemize}
+\subsection{Logging your session for later use}
+\begin{itemize}
+\item logstate	show state of the logger (on or off)
+\item logstart	start logging (default log file is ipython\_log.py, in the present working directory
+\item logstart filename	store history up to this point, and continue logging history, in filename
+\item logstart -r filename	same as above, but use the raw input: don't put the \_ip.magic() wrapper around magic commands
+\item logon	start logging after stopping
+\item logoff	stop logging after starting
+\item runlog log1 log2	run the log file log1, then run the log file log2 (this executes the logged histories)
+
+\item logstart -o :stores output
+\item logstart -o ~/home/Desktop/mylog.log
+\item If start ipython this way, you can name the logfile yourself:
+ipython --logfile=logfile.txt
+\end{itemize}
+
+
+
+
+
+
+
+
+\end{document}
